@@ -1,6 +1,6 @@
 {
-  "name": "design-system-one",
-  "version": "1.0.0",
+  "name": "ds-one",
+  "version": "0.1.0-beta",
   "description": "A modern, component-based design system built with TypeScript and LitElement",
   "main": "index.js",
   "type": "module",
@@ -24,7 +24,7 @@
     "css",
     "theming"
   ],
-  "author": "Joachim",
+  "author": "Joachim Aaløkke Sørensen",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.0.0",
@@ -52,12 +52,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/design-system-one.git"
+    "url": "git+https://github.com/jo4712/ds-one.git"
   },
   "bugs": {
-    "url": "https://github.com/username/design-system-one/issues"
+    "url": "https://github.com/jo4712/ds-one/issues"
   },
-  "homepage": "https://github.com/username/design-system-one#readme",
+  "homepage": "https://github.com/jo4712/ds-one#readme",
   "engines": {
     "node": ">=18.0.0",
     "bun": ">=1.0.0"

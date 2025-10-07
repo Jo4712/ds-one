@@ -1,4 +1,4 @@
-# Design System One
+# DS one
 
 A modern, component-based design system built with TypeScript and LitElement. This design system provides a comprehensive set of reusable UI components with built-in theming, internationalization, and accessibility features.
 
@@ -159,7 +159,7 @@ The design system is built mobile-first with responsive scaling:
 </head>
 <body>
   <app-v1 type="default">
-    <text-v1 variant="heading">Welcome to Design System One</text-v1>
+    <text-v1 variant="heading">Welcome to DS one</text-v1>
     <button-v1 variant="primary">Get Started</button-v1>
   </app-v1>
 </body>
