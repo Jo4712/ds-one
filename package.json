@@ -1,0 +1,65 @@
+{
+  "name": "design-system-one",
+  "version": "1.0.0",
+  "description": "A modern, component-based design system built with TypeScript and LitElement",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --bun serve",
+    "build": "bun run build:types",
+    "build:types": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "format": "prettier --write .",
+    "test": "bun test",
+    "serve": "bun run --bun serve -p 3000"
+  },
+  "keywords": [
+    "design-system",
+    "web-components",
+    "lit-element",
+    "typescript",
+    "ui-components",
+    "frontend",
+    "css",
+    "theming"
+  ],
+  "author": "Joachim",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "lit": "^3.0.0"
+  },
+  "peerDependencies": {
+    "lit": "^3.0.0"
+  },
+  "files": [
+    "0 Face/",
+    "1 Root/",
+    "2 Core/",
+    "3 Unit/",
+    "4 Page/",
+    "x Icon/",
+    "*.md",
+    "*.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/design-system-one.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/design-system-one/issues"
+  },
+  "homepage": "https://github.com/username/design-system-one#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  }
+}
