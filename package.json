@@ -34,7 +34,7 @@
     "build:units": "bun run build:component -- 3 Unit", 
     "build:pages": "bun run build:component -- 4 Page",
     "build:component": "bun run scripts/build-component.ts",
-    "prepublishOnly": "bun run build",
+    "prepublishOnly": "echo 'Skipping build - using source files directly'",
     "lint": "eslint . --ext .ts,.js",
     "lint:fix": "eslint . --ext .ts,.js --fix",
     "format": "prettier --write .",
