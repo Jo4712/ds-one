@@ -4,21 +4,30 @@ Build modern UIs with web components!
 
 > A component-based design system built with TypeScript and LitElement that provides reusable UI components with built-in theming, internationalization, and accessibility features.
 
-[![npm version](https://badge.fury.io/js/design-system-one.svg)](https://badge.fury.io/js/design-system-one)
+[![npm version](https://badge.fury.io/js/ds-one.svg)](https://badge.fury.io/js/ds-one)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-0.1.0--beta-blue.svg)](https://github.com/yourusername/design-system-one)
+[![Version](https://img.shields.io/badge/version-0.1.0--beta-blue.svg)](https://github.com/Jo4712/ds-one)
 
 **DS one** is a modern design system that provides a comprehensive set of reusable UI components built with Web Components. Think "Material Design meets Web Standards"—a simple, accessible component library that works with any framework or vanilla JavaScript.
+
+**📦 Now available on NPM!** Install with `bun add ds-one@beta` and start building today.
 
 ## 🚀 Quick Start
 
 ### Install
 
 ```bash
-npm install design-system-one
-# or
-bun add design-system-one
+# Using bun (recommended)
+bun add ds-one@beta
+
+# Using npm
+npm install ds-one@beta
+
+# Using yarn
+yarn add ds-one@beta
 ```
+
+**Note**: Currently published as beta version `0.1.0-beta`. Use `@beta` tag to install.
 
 ### Basic Usage
 
@@ -162,7 +171,7 @@ MIT © [DS one](https://github.com/Jo4712/ds-one)
 - **[Online Demo](https://dsone.dev/demo)** - Try DS one in your browser
 - **[Documentation](https://dsone.dev/docs)** - Complete documentation
 - **[GitHub](https://github.com/Jo4712/ds-one)** - Source code and issues
-- **[NPM Package](https://www.npmjs.com/package/design-system-one)** - Install from NPM
+- **[NPM Package](https://www.npmjs.com/package/ds-one)** - Install from NPM
 
 ---
 
