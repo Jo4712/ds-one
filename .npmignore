@@ -1,0 +1,32 @@
+# Development files
+node_modules/
+.git/
+.gitignore
+.DS_Store
+
+# Documentation (keep only README.md)
+docs/npm-publishing.md
+
+# Development tools
+.eslintrc*
+.prettierrc*
+tsconfig.json
+
+# Build artifacts (keep only dist/)
+*.log
+*.tgz
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+*.test.ts
+*.test.js
+__tests__/
+
+# CI/CD
+.github/
+

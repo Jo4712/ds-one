@@ -8,14 +8,9 @@
   "type": "module",
   "files": [
     "dist/",
-    "1 Root/",
-    "2 Core/",
-    "3 Unit/",
-    "4 Page/",
-    "x Icon/",
+    "DS/",
     "README.md",
-    "LICENSE",
-    "specification.md"
+    "LICENSE"
   ],
   "exports": {
     ".": {
@@ -23,11 +18,11 @@
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./styles": "./1 Root/screen.css",
-    "./components/*": "./2 Core/*.js",
-    "./units/*": "./3 Unit/*.js",
-    "./pages/*": "./4 Page/*.js",
-    "./icons/*": "./x Icon/*.svg"
+    "./styles": "./DS/1 Root/screen.css",
+    "./components/*": "./DS/2 Core/*.js",
+    "./units/*": "./DS/3 Unit/*.js",
+    "./pages/*": "./DS/4 Page/*.js",
+    "./icons/*": "./DS/x Icon/*.svg"
   },
   "sideEffects": false,
   "scripts": {
