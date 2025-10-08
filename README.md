@@ -34,15 +34,24 @@ yarn add ds-one@beta
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="node_modules/design-system-one/1 Root/screen.css">
-  <script type="module" src="node_modules/design-system-one/2 Core/button-v1.ts"></script>
-  <script type="module" src="node_modules/design-system-one/2 Core/text-v1.ts"></script>
-</head>
-<body>
-  <button-v1 variant="primary" key="welcomeButton">Get Started</button-v1>
-  <text-v1 variant="heading" key="mainHeading">Welcome to DS one</text-v1>
-</body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="node_modules/design-system-one/1 Root/screen.css"
+    />
+    <script
+      type="module"
+      src="node_modules/design-system-one/2 Core/button-v1.ts"
+    ></script>
+    <script
+      type="module"
+      src="node_modules/design-system-one/2 Core/text-v1.ts"
+    ></script>
+  </head>
+  <body>
+    <button-v1 variant="primary" key="welcomeButton">Get Started</button-v1>
+    <text-v1 variant="heading" key="mainHeading">Welcome to DS one</text-v1>
+  </body>
 </html>
 ```
 
@@ -53,6 +62,7 @@ Try DS one in your browser: **[ds-one.dev/demo](https://ds-one.dev/demo)**
 ## ✨ Features
 
 ### Core Components
+
 - **Web Components**: Built with LitElement for maximum compatibility
 - **TypeScript support**: Full type definitions and IntelliSense
 - **Accessibility**: ARIA support and keyboard navigation built-in
@@ -60,12 +70,14 @@ Try DS one in your browser: **[ds-one.dev/demo](https://ds-one.dev/demo)**
 - **Theme system**: CSS custom properties for easy customization
 
 ### Internationalization
+
 - **Language keys**: All text via camelCase keys for full i18n
 - **Notion CMS integration**: Dynamic content management
 - **Fallback support**: Graceful degradation when translations missing
 - **Multi-language**: Built-in language switching
 
 ### Developer Experience
+
 - **Zero dependencies**: Pure Web Components, no framework required
 - **Fast loading**: Optimized bundle size and tree-shaking
 - **Hot reload**: Live updates in development
@@ -81,6 +93,7 @@ Try DS one in your browser: **[ds-one.dev/demo](https://ds-one.dev/demo)**
 ## Current Status: v0.1.0-beta
 
 ### Completed Features
+
 - Core component library (button, text, app, icon)
 - Theming system with accent color support
 - Internationalization with language keys
@@ -90,12 +103,14 @@ Try DS one in your browser: **[ds-one.dev/demo](https://ds-one.dev/demo)**
 - Notion CMS integration for dynamic content
 
 ### In Progress (0.1.0 Beta Goals)
+
 - Additional component variants and states
 - Enhanced theming documentation
 - Component testing suite
 - Storybook integration
 
 ### Planned (0.2.0+)
+
 - Advanced components (forms, navigation, data display)
 - Animation system and transitions
 - Design tokens and design system documentation
@@ -116,22 +131,24 @@ DS one/
 ## Roadmap
 
 ### v0.1.0 (Beta) - Q1 2025
+
 - [ ] Complete core component set
 - [ ] Enhanced theming system
 - [ ] Component testing suite
 - [ ] Storybook documentation
 
 ### v0.2.0 (Stable) - Q2 2025
+
 - [ ] Advanced components (forms, navigation)
 - [ ] Animation system
 - [ ] Design tokens
 - [ ] Figma integration
 
 ### v1.0.0 (Production) - Q3 2025
+
 - [ ] Complete feature set
 - [ ] Production-ready tooling
 - [ ] Long-term API stability
-
 
 ### Development Setup
 
@@ -175,4 +192,4 @@ MIT © [DS one](https://github.com/Jo4712/ds-one)
 
 ---
 
-**DS one** - *Build modern UIs with web components that work everywhere.*
+**DS one** - _Build modern UIs with web components that work everywhere._
