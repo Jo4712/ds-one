@@ -51,7 +51,7 @@ This document outlines the complete specification for publishing DS one as a dis
     "theming",
     "i18n"
   ],
-  "author": "Joachim <joachim@example.com>",
+  "author": "Jo4712 <jaa90@icloud.com>",
   "license": "MIT",
   "repository": {
     "type": "git",

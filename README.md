@@ -1,6 +1,6 @@
 # DS one
 
-build modern UIs with web components!
+Build modern UIs with web components!
 
 > A component-based design system built with TypeScript and LitElement that provides reusable UI components with built-in theming, internationalization, and accessibility features.
 
@@ -128,8 +128,8 @@ DS one/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/design-system-one.git
-cd design-system-one
+git clone https://github.com/Jo4712/ds-one.git
+cd ds-one
 
 # Install dependencies
 bun install
@@ -161,7 +161,7 @@ MIT © [DS one](https://github.com/Jo4712/ds-one)
 
 - **[Online Demo](https://dsone.dev/demo)** - Try DS one in your browser
 - **[Documentation](https://dsone.dev/docs)** - Complete documentation
-- **[GitHub](https://github.com/yourusername/design-system-one)** - Source code and issues
+- **[GitHub](https://github.com/Jo4712/ds-one)** - Source code and issues
 - **[NPM Package](https://www.npmjs.com/package/design-system-one)** - Install from NPM
 
 ---
