@@ -2,29 +2,65 @@
   "name": "ds-one",
   "version": "0.1.0-beta",
   "description": "A modern, component-based design system built with TypeScript and LitElement",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "dist/",
+    "1 Root/",
+    "2 Core/",
+    "3 Unit/",
+    "4 Page/",
+    "x Icon/",
+    "README.md",
+    "LICENSE",
+    "specification.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./1 Root/screen.css",
+    "./components/*": "./2 Core/*.js",
+    "./units/*": "./3 Unit/*.js",
+    "./pages/*": "./4 Page/*.js",
+    "./icons/*": "./x Icon/*.svg"
+  },
+  "sideEffects": false,
   "scripts": {
     "dev": "bun run --bun serve",
-    "build": "bun run build:types",
+    "build": "bun run build:types && bun run build:components",
     "build:types": "tsc --noEmit",
+    "build:components": "bun run build:core && bun run build:units && bun run build:pages",
+    "build:core": "bun run build:component -- 2 Core",
+    "build:units": "bun run build:component -- 3 Unit", 
+    "build:pages": "bun run build:component -- 4 Page",
+    "build:component": "bun run scripts/build-component.ts",
+    "prepublishOnly": "bun run build",
     "lint": "eslint . --ext .ts,.js",
     "lint:fix": "eslint . --ext .ts,.js --fix",
     "format": "prettier --write .",
     "test": "bun test",
-    "serve": "bun run --bun serve -p 3000"
+    "serve": "bun run --bun serve -p 3000",
+    "release:patch": "bun run scripts/release.js patch",
+    "release:minor": "bun run scripts/release.js minor",
+    "release:major": "bun run scripts/release.js major",
+    "release:beta": "bun run scripts/release.js beta"
   },
   "keywords": [
     "design-system",
     "web-components",
     "lit-element",
     "typescript",
-    "ui-components",
-    "frontend",
-    "css",
-    "theming"
+    "ui-kit",
+    "components",
+    "theming",
+    "i18n"
   ],
-  "author": "Joachim Aaløkke Sørensen",
+  "author": "Joachim Aaløkke Sørensen <joachim@example.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.0.0",
@@ -40,16 +76,6 @@
   "peerDependencies": {
     "lit": "^3.0.0"
   },
-  "files": [
-    "0 Face/",
-    "1 Root/",
-    "2 Core/",
-    "3 Unit/",
-    "4 Page/",
-    "x Icon/",
-    "*.md",
-    "*.json"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jo4712/ds-one.git"
@@ -57,7 +83,7 @@
   "bugs": {
     "url": "https://github.com/jo4712/ds-one/issues"
   },
-  "homepage": "https://github.com/jo4712/ds-one#readme",
+  "homepage": "https://dsone.dev",
   "engines": {
     "node": ">=18.0.0",
     "bun": ">=1.0.0"
