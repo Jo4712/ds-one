@@ -3,93 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DS one - CDN Example (Not Yet Supported)</title>
+    <title>DS one - CDN Example</title>
 
-    <style>
-      body {
-        font-family: system-ui, -apple-system, sans-serif;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 20px;
-        line-height: 1.6;
-      }
-      .warning {
-        background: #fff3cd;
-        border: 1px solid #ffc107;
-        border-radius: 4px;
-        padding: 20px;
-        margin: 20px 0;
-      }
-      code {
-        background: #f5f5f5;
-        padding: 2px 6px;
-        border-radius: 3px;
-        font-family: monospace;
-      }
-      pre {
-        background: #f5f5f5;
-        padding: 16px;
-        border-radius: 4px;
-        overflow-x: auto;
-      }
-    </style>
+    <!-- Import DS one from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ds-one@0.1.0-beta/DS/1%20Root/screen.css"
+    />
+
+    <script type="module">
+      // Import all components from CDN
+      import "https://cdn.jsdelivr.net/npm/ds-one@0.1.0-beta/dist/index.esm.js";
+    </script>
   </head>
   <body>
-    <h1>DS one - CDN Support Coming Soon</h1>
-
-    <div class="warning">
-      <strong>⚠️ CDN Support Not Available Yet</strong>
-      <p>
-        The current version (0.1.0-beta) does not support CDN usage due to
-        external dependencies. CDN support will be added in a future release.
-      </p>
-      <p>
-        See <a href="https://github.com/Jo4712/ds-one/issues/1">GitHub Issue #1</a>
-        for progress updates.
-      </p>
-    </div>
-
-    <h2>Alternative: Install via Bun/NPM</h2>
-
-    <p>For now, please install DS one using a package manager:</p>
-
-    <pre><code># Using bun (recommended)
-bun add ds-one@beta
-
-# Using npm
-npm install ds-one@beta</code></pre>
-
-    <h2>Usage After Installation</h2>
-
-    <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;link rel="stylesheet" href="node_modules/ds-one/DS/1 Root/screen.css" /&gt;
-    &lt;script type="module" src="../DS/2 Core/app-v1.ts"&gt;&lt;/script&gt;
-    &lt;script type="module" src="../DS/2 Core/button-v1.ts"&gt;&lt;/script&gt;
-    &lt;script type="module" src="../DS/2 Core/text-v1.ts"&gt;&lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;app-v1 type="default"&gt;
-      &lt;text-v1 variant="heading"&gt;Welcome to DS one&lt;/text-v1&gt;
-      &lt;button-v1 variant="primary"&gt;Get Started&lt;/button-v1&gt;
-    &lt;/app-v1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
-    <h2>See Working Examples</h2>
-
-    <ul>
-      <li><a href="basic.html">basic.html</a> - Basic component usage</li>
-      <li><a href="with-icons.html">with-icons.html</a> - Icon components</li>
-      <li><a href="interactive.html">interactive.html</a> - Interactive demo</li>
-    </ul>
-
-    <h2>Links</h2>
-    <ul>
-      <li><a href="https://www.npmjs.com/package/ds-one">NPM Package</a></li>
-      <li><a href="https://github.com/Jo4712/ds-one">GitHub Repository</a></li>
-      <li><a href="https://github.com/Jo4712/ds-one/issues/1">Issue #1: CDN Support</a></li>
-    </ul>
+    <app-v1 type="default">
+      <text-v1 variant="heading">DS one from CDN</text-v1>
+      <text-v1 variant="body">
+        This example loads DS one directly from jsDelivr CDN
+      </text-v1>
+      <button-v1 variant="primary">No npm install needed!</button-v1>
+    </app-v1>
   </body>
 </html>
